@@ -26,3 +26,5 @@ Quando fazer um componente? quando o mesmo trecho de código é repetido várias
 Sempre cria a função dentro da função do componente.
 
 **Propriedade:** informações que um componente pai passa para o componente filho.
+
+useEffect() -> dispara uma função toda vez que uma informação alterar. Já é do próprio React
