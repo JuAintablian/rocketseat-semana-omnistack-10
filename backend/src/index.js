@@ -10,7 +10,7 @@ mongoose.connect('mongodb+srv://omnistack:omnistack@cluster0-j4naj.mongodb.net/t
     useUnifiedTopology: true
 });
 
-app.use(cors())
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
