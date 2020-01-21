@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import api from './services/api'
+import api from './services/api';
+
 import './global.css';
 import './app.css';
 import './sidebar.css';
@@ -40,7 +41,7 @@ async function handleAddDev(data){
 
       <main>
         <ul>
-          {devs.map( dev => (
+          {devs.map(dev => (
             <DevItem key={dev._id} dev={dev} />
           ))}
         </ul>

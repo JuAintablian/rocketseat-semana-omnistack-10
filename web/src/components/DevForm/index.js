@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
+import "./style.css";
 
 function DevForm({ onSubmit }){
 
@@ -31,13 +32,13 @@ function DevForm({ onSubmit }){
       async function handleSubmit(e){
           e.preventDefault();
           await onSubmit(
-              github_username,
+              {github_username,
               techs,
               latitude,
-              longitude
+              longitude}
           );
           setGithubUsername('');
-  setTechs('');
+          setTechs('');
       }
 return (
 <form onSubmit={handleSubmit}>
